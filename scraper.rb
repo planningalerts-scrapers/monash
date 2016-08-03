@@ -3,7 +3,7 @@ require 'mechanize'
 
 agent = Mechanize.new
 
-def scrape_page(page)
+def scrape_page(page, base_url)
   table = page.at("table.ContentPanel")
   tr_elems = table.search("tr")
 
