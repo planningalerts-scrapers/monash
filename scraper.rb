@@ -29,9 +29,15 @@ def scrape_page(page)
   end
 end
 
-# Load summary page.
-url = "https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP"
-page = agent.get(url)
+base_url = "https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/"
+entry_form_url_ext = "/EnquiryLists.aspx?ModuleCode=LAP"
+first_page_url = base_url + entry_form_url_ext
+
+# Get first page with radio buttons.
+page = agent.get(first_page_url)
+form = page.forms.first
+form.radiobuttons[0].check
+page = form.submit(form.button_with(:value => "Next"))
 
 # Now do the paging magic
 number_pages =  page.at("#ctl00_MainBodyContent_mPagingControl_pageNumberLabel").inner_text.split(" ")[3].to_i
