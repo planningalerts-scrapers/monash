@@ -17,7 +17,6 @@ def scrape_page(page, base_url)
 
     record = {
       "info_url" => this_application_link,
-      "comment_url" => 'mailto:mail@monash.vic.gov.au',
       "council_reference" => tr.at("td a").inner_text,
       "address" => tr.search("td")[1].inner_text,
       "description" => tr.search("td")[2].inner_text,
