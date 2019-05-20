@@ -32,8 +32,7 @@ scraper = EpathwayScraper::Scraper.new(
 agent = scraper.agent
 
 base_url = "https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/"
-entry_form_url_ext = "/EnquiryLists.aspx?ModuleCode=LAP"
-first_page_url = base_url + entry_form_url_ext
+first_page_url = base_url + "EnquiryLists.aspx?ModuleCode=LAP"
 
 # Get first page with radio buttons.
 page = agent.get(first_page_url)
