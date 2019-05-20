@@ -1,7 +1,4 @@
-require 'scraperwiki'
-require 'mechanize'
-
-agent = Mechanize.new
+require "epathway_scraper"
 
 def scrape_page(page, base_url)
   table = page.at("table.ContentPanel")
@@ -27,6 +24,12 @@ def scrape_page(page, base_url)
     ScraperWiki.save_sqlite(['council_reference'], record)
   end
 end
+
+scraper = EpathwayScraper::Scraper.new(
+  "https://epathway.monash.vic.gov.au/ePathway/Production"
+)
+
+agent = scraper.agent
 
 base_url = "https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/"
 entry_form_url_ext = "/EnquiryLists.aspx?ModuleCode=LAP"

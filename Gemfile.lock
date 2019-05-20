@@ -7,6 +7,13 @@ GIT
       httpclient
       sqlite_magic
 
+PATH
+  remote: ../epathway_scraper
+  specs:
+    epathway_scraper (0.1.0)
+      mechanize
+      scraperwiki
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,7 +67,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mechanize
+  epathway_scraper!
   scraperwiki!
   timecop
   vcr
