@@ -43,13 +43,6 @@
     lot less than 500 square metres
   date_received: '2018-09-17'
   date_scraped: '2019-05-15'
-- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=589580
-  council_reference: TPA/49618
-  address: 37 Evelyn Street CLAYTON  VIC  3168
-  description: use and development of a residential building comprising 16 student
-    housing rooms with associated carparking requirements
-  date_received: '2018-09-17'
-  date_scraped: '2019-05-15'
 - info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=592254
   council_reference: TPA/49650
   address: 35 Bogong Avenue GLEN WAVERLEY  VIC  3150
@@ -83,36 +76,23 @@
     Zone, Category 1
   date_received: '2018-11-02'
   date_scraped: '2019-05-15'
-- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=607339
-  council_reference: TPA/49818
-  address: 133 Huntingdale Road OAKLEIGH  VIC  3166
-  description: Construction of a new double storey townhouse to the rear, garage to
-    the existing dwelling and alteration of access to a road zone category 1 (RDZ1).
-  date_received: '2018-11-07'
-  date_scraped: '2019-05-15'
-- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=612724
-  council_reference: TPA/49876
-  address: 4 Gordon Avenue OAKLEIGH EAST  VIC  3166
-  description: construction of three (3) double storey dwellings
-  date_received: '2018-11-21'
-  date_scraped: '2019-05-15'
 - info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=613799
   council_reference: TPA/49887
   address: 13 Paddington Road HUGHESDALE  VIC  3166
   description: extension to an existing dwelling on a lot <500m2
   date_received: '2018-11-28'
   date_scraped: '2019-05-15'
+- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=613841
+  council_reference: TPA/49888
+  address: 51 Petronella Avenue WHEELERS HILL  VIC  3150
+  description: Construction of two (2) double storey side by side dwellings in SBO
+    and removal of vegetation protected under VPO
+  date_received: '2018-11-26'
+  date_scraped: '2019-05-15'
 - info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=616829
   council_reference: TPA/49912
   address: 8 Hinkler Road GLEN WAVERLEY  VIC  3150
   description: construction of two (2) double storey dwellings
-  date_received: '2018-12-03'
-  date_scraped: '2019-05-15'
-- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=616852
-  council_reference: TPA/49913
-  address: 40 Cratloe Road MOUNT WAVERLEY  VIC  3149
-  description: construction of one (1) double storey dwelling on a lot less than 500
-    sq. m. and removal of vegetation in Vegetation Protection Overlay (VPO)
   date_received: '2018-12-03'
   date_scraped: '2019-05-15'
 - info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=618292
@@ -148,13 +128,6 @@
     with a basement; creation of access through a road classified within road zone
     category 1 and removal of two (2) canopy trees
   date_received: '2018-12-17'
-  date_scraped: '2019-05-15'
-- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=622684
-  council_reference: TPA/49975
-  address: 13 Cambro Road CLAYTON  VIC  3168
-  description: Construction of two (2) double storey buildings to be used as rooming
-    house
-  date_received: '2018-12-19'
   date_scraped: '2019-05-15'
 - info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=622685
   council_reference: TPA/49976
@@ -202,17 +175,18 @@
   description: buildings and works to existing dwellings and 2 lot subdivision
   date_received: '2018-12-28'
   date_scraped: '2019-05-15'
-- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=627164
-  council_reference: TPA/50021
-  address: 4 Hunter Street GLEN WAVERLEY  VIC  3150
-  description: construction of two (2) double storey dwellings
-  date_received: '2019-01-08'
+- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=625256
+  council_reference: TPA/50011
+  address: 76 Capital Avenue GLEN WAVERLEY  VIC  3150
+  description: Construction of two (2) double storey dwellings in Special Building
+    Overlay (SBO)
+  date_received: '2018-12-31'
   date_scraped: '2019-05-15'
-- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=629033
-  council_reference: TPA/50035
-  address: 5 Matthew Street GLEN WAVERLEY  VIC  3150
-  description: Construction of two (2) double storey dwellings & garage
-  date_received: '2019-01-11'
+- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=631694
+  council_reference: TPA/50040
+  address: 17 Faulkiner Street CLAYTON  VIC  3168
+  description: construction of three (3) double storey dwellings
+  date_received: '2019-01-16'
   date_scraped: '2019-05-15'
 - info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=633736
   council_reference: TPA/50060
@@ -226,36 +200,36 @@
   description: Construction of one (1) double storey dwelling at the rear of the existing
   date_received: '2019-02-04'
   date_scraped: '2019-05-15'
-- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=644208
-  council_reference: TPA/50118
-  address: 52 Bogong Avenue GLEN WAVERLEY  VIC  3150
-  description: Construction of two (2) double storey dwellings
+- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=644565
+  council_reference: TPA/50125
+  address: 6 Andrew Street MOUNT WAVERLEY  VIC  3149
+  description: two storey extension to an existing shop
   date_received: '2019-02-15'
-  date_scraped: '2019-05-15'
-- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=644242
-  council_reference: TPA/50120
-  address: 33 Hampshire Road GLEN WAVERLEY  VIC  3150
-  description: Construction of two (2) double storey dwellings
-  date_received: '2019-02-15'
-  date_scraped: '2019-05-15'
-- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=644770
-  council_reference: TPA/50127
-  address: 91 Tiverton Drive MULGRAVE  VIC  3170
-  description: Buildings and works comprising a single storey extension and a first
-    floor addition, together with construction of additional car parking spaces
-  date_received: '2019-02-18'
-  date_scraped: '2019-05-15'
-- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=644810
-  council_reference: TPA/50128
-  address: 8 Atlantic Street CLAYTON  VIC  3168
-  description: Construction of two (2) double storey dwellings for shared accommodation
-  date_received: '2019-02-20'
   date_scraped: '2019-05-15'
 - info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=648406
   council_reference: TPA/50151
   address: 6 Eaton Mall OAKLEIGH  VIC  3166
   description: sale and consumption of liquor associated with a restaurant (cafe)
   date_received: '2019-02-22'
+  date_scraped: '2019-05-15'
+- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=648589
+  council_reference: TPA/50157
+  address: 53 The Outlook GLEN WAVERLEY  VIC  3150
+  description: Construction of two (2) double storey dwellings and a front fence
+  date_received: '2019-02-27'
+  date_scraped: '2019-05-15'
+- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=653208
+  council_reference: TPA/50191
+  address: 651-653 Waverley Road GLEN WAVERLEY  VIC  3150
+  description: use of an indoor recreation facility (play centre) and restricted retail
+    premises, display of signs, building and works and associated car parking
+  date_received: '2019-03-12'
+  date_scraped: '2019-05-15'
+- info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=657605
+  council_reference: TPA/50230
+  address: 1/182 Lawrence Road MOUNT WAVERLEY  VIC  3149
+  description: construction of one double storey dwelling on a lot <500sqm
+  date_received: '2019-03-25'
   date_scraped: '2019-05-15'
 - info_url: https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=662689
   council_reference: TPA/50272
