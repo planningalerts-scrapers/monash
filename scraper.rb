@@ -21,7 +21,7 @@ def scrape_page(page, base_url)
       "date_scraped" => Date.today.to_s
     }
 
-    ScraperWiki.save_sqlite(['council_reference'], record)
+    EpathwayScraper.save(record)
   end
 end
 
@@ -34,11 +34,7 @@ agent = scraper.agent
 base_url = "https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/"
 first_page_url = base_url + "EnquiryLists.aspx?ModuleCode=LAP"
 
-# Get first page with radio buttons.
-page = agent.get(first_page_url)
-form = page.forms.first
-form.radiobuttons[0].check
-page = form.submit(form.button_with(:value => "Next"))
+page = scraper.pick_type_of_search(:advertising)
 
 # Now do the paging magic
 number_pages =  page.at("#ctl00_MainBodyContent_mPagingControl_pageNumberLabel").inner_text.split(" ")[3].to_i
