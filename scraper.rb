@@ -14,8 +14,7 @@ page = scraper.pick_type_of_search(:advertising)
 number_pages = scraper.extract_total_number_of_pages(page)
 
 (1..number_pages).each do |no|
-  result_page_extension = "/EnquirySummaryView.aspx?PageNumber=#{no}"
-  results_page_url = base_url + result_page_extension
+  results_page_url = base_url + "EnquirySummaryView.aspx?PageNumber=#{no}"
   page = agent.get(results_page_url)
   puts "Scraping page #{no} of " + number_pages.to_s + "..."
   scraper.scrape_index_page(page) do |record|
