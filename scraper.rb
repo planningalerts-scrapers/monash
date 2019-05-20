@@ -1,27 +1,5 @@
 require "epathway_scraper"
 
-def scrape_page(page, base_url, scraper)
-  table = page.at("table.ContentPanel")
-  tr_elems = table.search("tr")
-
-  tr_elems.each_with_index do |tr, index|
-    next if index == 0 #Skipping the first beacause it's got <th> not <td>
-
-    day, month, year = tr.search("td")[3].inner_text.split("/").map{|s| s.to_i}
-
-    record = {
-      "info_url" => scraper.base_url,
-      "council_reference" => tr.at("td a").inner_text,
-      "address" => tr.search("td")[1].inner_text,
-      "description" => tr.search("td")[2].inner_text,
-      "date_received" => Date.new(year, month, day).to_s,
-      "date_scraped" => Date.today.to_s
-    }
-
-    EpathwayScraper.save(record)
-  end
-end
-
 scraper = EpathwayScraper::Scraper.new(
   "https://epathway.monash.vic.gov.au/ePathway/Production"
 )
@@ -29,17 +7,18 @@ scraper = EpathwayScraper::Scraper.new(
 agent = scraper.agent
 
 base_url = "https://epathway.monash.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/"
-first_page_url = base_url + "EnquiryLists.aspx?ModuleCode=LAP"
 
 page = scraper.pick_type_of_search(:advertising)
 
 # Now do the paging magic
-number_pages =  page.at("#ctl00_MainBodyContent_mPagingControl_pageNumberLabel").inner_text.split(" ")[3].to_i
+number_pages = scraper.extract_total_number_of_pages(page)
 
 (1..number_pages).each do |no|
   result_page_extension = "/EnquirySummaryView.aspx?PageNumber=#{no}"
   results_page_url = base_url + result_page_extension
   page = agent.get(results_page_url)
   puts "Scraping page #{no} of " + number_pages.to_s + "..."
-  scrape_page(page, base_url, scraper)
+  scraper.scrape_index_page(page) do |record|
+    EpathwayScraper.save(record)
+  end
 end
